@@ -5,70 +5,139 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Movies mu luganda 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch Movies for free</title>
+  <title>  Vj Junior Free Full Movies</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content=" Movies 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch New Movies by VJ Junior, VJ Jingo, VJ Kevo, Ice P Ulio, Bukoleya, Indian &amp; Turkish Films. ✓ Free Cartoons &amp; Animations. ✓ Translated · SUPER ACTION">
+  <meta name="description" content="  Vj Junior ✓ Free Cartoons &amp; Animations. ✓ Translated · SUPER ACTION">
 
+<!-- 🎬 Video Player Container -->
+<div id="video-container" style="position:relative; width:100%; height:500px; margin:20px 0;">
 
-    <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #000000;
-  text-align: center;
+    <div class="video-wrapper" style="position:relative; width:100%; height:100%;">
+
+        <!-- YouTube Player -->
+        <iframe id="videoPlayer"
+            style="width:100%; height:100%;"
+            src="https://www.youtube.com/embed/DsZU5d1o_NA?enablejsapi=1
+                &autoplay=0
+                &controls=1
+                &modestbranding=1
+                &rel=0
+                &fs=0
+                &color=white
+                &iv_load_policy=3
+                &playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media">
+        </iframe>
+
+        <!-- BLACK FRAME (TOP/BOTTOM LARGE, SIDES SMALL) -->
+        <div class="hide-top"></div>
+        <div class="hide-left"></div>
+        <div class="hide-right"></div>
+        <div class="hide-bottom-right"></div> <!-- Full-width black bar -->
+
+        <!-- 🎬 Ad Overlay ABOVE black bars -->
+        <div id="ad-overlay"
+            style="display:none; position:absolute; top:0; left:0; width:100%; height:100%;
+                   background:rgba(0,0,0,0.75); z-index:40; justify-content:center;
+                   align-items:center; flex-direction:column;">
+
+            <!-- Skip / Close Button always clickable -->
+            <div style="position:absolute; top:10px; right:20px; z-index:50; text-align:right; pointer-events:auto;">
+                <div id="countdown"
+                    style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;">
+                    Skip in: 7
+                </div>
+                <button id="close-ad"
+                    style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px;
+                           cursor:pointer; border-radius:4px; font-weight:bold;">
+                    Skip
+                </button>
+            </div>
+
+            <div id="ad-wrapper"
+                style="display:flex; justify-content:center; align-items:center;
+                       width:100%; height:100%; text-align:center; pointer-events:auto;">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- BLACK FRAME CSS with responsive -->
+<style>
+/* TOP black mask */
+.hide-top {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px; /* desktop */
+    background:#000000;
+    z-index:20;
+    pointer-events:none;
 }
 
-.video-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 50px auto;
-  height: 500px;
-  border-radius: 12px;
-  overflow: hidden; /* disables scrolling inside container */
+/* LEFT thin black border */
+.hide-left {
+    position:absolute;
+    top:0;
+    left:0;
+    width:8px;
+    height:100%;
+    background:#000000;
+    z-index:20;
+    pointer-events:none;
 }
 
-iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-  border-radius: 12px;
-  pointer-events: auto; /* ensure iframe is interactive */
+/* RIGHT thin black border */
+.hide-right {
+    position:absolute;
+    top:0;
+    right:0;
+    width:8px;
+    height:100%;
+    background:#000000;
+    z-index:20;
+    pointer-events:none;
+}
+
+/* BOTTOM RIGHT black bar - full width on desktop */
+.hide-bottom-right {
+    position:absolute;
+    bottom:0;
+    left:0; /* Full-width from left to right */
+    width:100%; /* Full width */
+    height:40px; /* reduced height */
+    background:#000000;
+    z-index:20;
+    pointer-events:none;
+}
+
+/* RESPONSIVE adjustments */
+@media screen and (max-width: 768px) {
+    .hide-top { height:80px; } /* taller top on tablet */
+    .hide-bottom-right { width:100%; height:55px; } /* adjusted to 55px on tablet */
+    .hide-left, .hide-right { width:5px; }
+}
+
+@media screen and (max-width: 480px) {
+    .hide-top { height:95px; } /* taller top on mobile */
+    .hide-bottom-right { width:100%; height:55px; } /* adjusted to 55px on mobile */
+    .hide-left, .hide-right { width:3px; }
 }
 </style>
 
-
-<div class='video-container'>
-  <iframe allowfullscreen='' scrolling='no' src='http://movies26.marketing2advertising.com/'/></div>
-
-    </div>
-
-    <!-- 🎬 Ad Overlay (Inside Video Container) -->
-    <div id="ad-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.75); z-index:10; justify-content:center; align-items:center; flex-direction:column;">
-        <!-- Countdown and Skip Button -->
-        <div style="position:absolute; top:20px; right:20px; text-align:right; z-index: 20;">
-            <div id="countdown" style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;">Skip in: 7</div>
-            <button id="close-ad" style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px; cursor:pointer; border-radius:4px; font-weight:bold;">Skip</button>
-        </div>
-
-        <!-- Google AdSense Ad Container -->
-        <div id="ad-wrapper" style="display:flex; justify-content:center; align-items:center; width:100%; height:100%; text-align:center;">
-            <!-- AdSense ad will be inserted here dynamically -->
-        </div>
-    </div>
-
-</div>
-
-<!-- 🎬 Google AdSense script -->
-<script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743'></script>
+<!-- AdSense script -->
+<script async crossorigin="anonymous"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743">
+</script>
 
 <script>
-// Variables to control ad behavior
-let skipClicked = false; // Flag to track if the "Skip" button was clicked
-let videoPlayer = document.getElementById("videoPlayer"); // Video element reference
+let skipClicked = false;
+let iframe = document.getElementById("videoPlayer");
 
-// Ad configuration for Google AdSense (5 rotating ads)
 const ads = [
     { client:"ca-pub-2269884583846743", slot:"2359999321", width:300, height:250 },
     { client:"ca-pub-2269884583846743", slot:"4256856469", width:250, height:250 },
@@ -77,9 +146,8 @@ const ads = [
     { client:"ca-pub-2269884583846743", slot:"5610977415", width:336, height:280 }
 ];
 
-let currentAdIndex = 0; // Keeps track of which ad to show next
+let currentAdIndex = 0;
 
-// Function to show ad overlay with video and countdown
 function showAdOverlay(customSeconds = 8) {
     const overlay = document.getElementById("ad-overlay");
     const countdownEl = document.getElementById("countdown");
@@ -87,10 +155,9 @@ function showAdOverlay(customSeconds = 8) {
     const adWrapper = document.getElementById("ad-wrapper");
 
     overlay.style.display = "flex";
-    closeBtn.style.display = "none"; // Initially hide the button
-    adWrapper.innerHTML = ""; // Clear previous ad content
+    closeBtn.style.display = "none";
+    adWrapper.innerHTML = "";
 
-    // Load ad
     const ad = ads[currentAdIndex];
     const ins = document.createElement("ins");
     ins.className = "adsbygoogle";
@@ -101,97 +168,65 @@ function showAdOverlay(customSeconds = 8) {
     ins.setAttribute("data-ad-slot", ad.slot);
 
     adWrapper.appendChild(ins);
-    (adsbygoogle = window.adsbygoogle || []).push({}); // Request AdSense ad to load
+    (adsbygoogle = window.adsbygoogle || []).push({});
 
-    // Prepare next ad rotation
     currentAdIndex = (currentAdIndex + 1) % ads.length;
 
-    // Countdown logic
     let timeLeft = customSeconds;
     countdownEl.textContent = "Skip in: " + timeLeft;
 
-    const timer = setInterval(function() {
+    const timer = setInterval(() => {
         timeLeft--;
         countdownEl.textContent = "Skip in: " + timeLeft;
 
         if (timeLeft === 0) {
-            closeBtn.style.display = "inline-block"; // Show the skip button after countdown ends
-            closeBtn.textContent = "X"; // Change button to "X"
+            closeBtn.style.display = "inline-block";
+            closeBtn.textContent = "X";
             clearInterval(timer);
         }
-    }, 1000); // 1-second interval for countdown
+    }, 1000);
 
-    // Handle close button behavior
     closeBtn.onclick = function() {
-        overlay.style.display = "none"; // Close the ad overlay
-        videoPlayer.play(); // Play the video after ad is skipped
+        overlay.style.display = "none";
+        iframe.contentWindow.postMessage(
+            '{"event":"command","func":"playVideo","args":""}', '*'
+        );
     };
 }
 
-// Special rule: First opening = 2 ads with delay (after 2 minutes)
 function runInitialTwoAds() {
     setTimeout(() => {
-        // Ad 1 = 7 seconds
-        showAdOverlay(7); // Ad 1 displays for 7 seconds
+        showAdOverlay(7);
 
-        // After 7 seconds, show the Skip button
         setTimeout(() => {
             const closeBtn = document.getElementById("close-ad");
-            closeBtn.style.display = "inline-block"; // Show "Skip" button
-            closeBtn.textContent = "Skip"; // Set button text to "Skip"
-        }, 7000); // Show Skip button after 7 seconds
+            closeBtn.style.display = "inline-block";
+            closeBtn.textContent = "Skip";
+        }, 7000);
 
-        // Check if "Skip" button is clicked before transitioning to Ad 2
         const closeBtn = document.getElementById("close-ad");
         closeBtn.onclick = function() {
-            skipClicked = true; // Mark that "Skip" was clicked
-            showAdOverlay(8); // Show Ad 2 immediately (for 8 seconds)
-            closeBtn.style.display = "none"; // Hide the skip button
+            skipClicked = true;
+            showAdOverlay(8);
+            closeBtn.style.display = "none";
         };
 
-        // If "Skip" button isn't clicked, Ad 2 will show after 13 more seconds (20 seconds total)
         setTimeout(() => {
-            if (!skipClicked) {
-                showAdOverlay(8); // Ad 2 shows for 8 seconds after the delay
-            }
-        }, 20000); // Trigger after 20 seconds (7 seconds for Ad 1 + 13 seconds wait)
-    }, 120000); // Wait 2 minutes (120 seconds) before showing the first ad
+            if (!skipClicked) showAdOverlay(8);
+        }, 20000);
+
+    }, 120000);
 }
 
-// Start the ad sequence
-runInitialTwoAds(); // Display first two ads after 2 minutes (7s + 13s wait = 20s)
+runInitialTwoAds();
 
-// Start full schedule AFTER the second ad finishes
 setTimeout(() => {
-    // Further ad schedule starts here (after initial ads)
-    
-    // 1) 5 minutes (300 seconds)
     setTimeout(showAdOverlay, 300000);
-
-    // 2) 10 minutes (600 seconds)
     setTimeout(showAdOverlay, 600000);
-
-    // 3) 20 minutes (1200 seconds)
     setTimeout(showAdOverlay, 1200000);
-
-    // 4) 30 minutes (1800 seconds)
     setTimeout(showAdOverlay, 1800000);
-
-    // 5) Every 35 minutes (2100 seconds)
     setInterval(showAdOverlay, 2100000);
-
-}, 20000); // Wait for the first 20 seconds (7 + 13) to complete, then start the schedule
-
-// Prevent Full-Screen Mode
-videoPlayer.removeAttribute("controlsList"); // Remove full-screen control from the player
-
-// Prevent the user from entering full-screen programmatically
-videoPlayer.addEventListener('fullscreenchange', function() {
-    if (document.fullscreenElement) {
-        document.exitFullscreen(); // Automatically exit fullscreen if attempted
-    }
-});
-
+}, 20000);
 </script>
     </div>
   </main>
@@ -279,7 +314,7 @@ videoPlayer.addEventListener('fullscreenchange', function() {
 
 
 <!-- Blogger JSON Feed for label "mobland", showing 10 posts -->
-<script src="https://www.gynecologist.shop/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
+<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
 
 <style>
   .movie-slider-wrapper {
@@ -498,7 +533,7 @@ async function searchPosts(e, auto = false) {
   resultsDiv.innerHTML = "<p>Loading...</p>";
 
   try {
-    const res = await fetch(`https://gynecologist.shop/wp-json/wp/v2/posts?_embed&search=${encodeURIComponent(query)}`);
+    const res = await fetch(`https://marketing2advertising.com/wp-json/wp/v2/posts?_embed&search=${encodeURIComponent(query)}`);
     const posts = await res.json();
 
     if (posts.length === 0) {
@@ -898,7 +933,7 @@ function toggleBottomAd() {
 
 <script>
 // === BLOGGER SITE URL ===
-const BLOG_URL = "https://www.gynecologist.shop/";
+const BLOG_URL = "https://www.marketing2advertising.com/";
 
 /* --- Fetch Blogger Posts by Search Query --- */
 function searchPosts(query) {
@@ -1021,7 +1056,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 </script>
 
 <!-- Blogger JSON Feed (label: movies1000) -->
-<script src="https://www.gynecologist.shop/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
+<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
 
 <style>
   .movie-grid-wrapper {
@@ -1242,7 +1277,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 
 <script>
 // === BLOGGER SITE URL ===
-const BLOG_URL = "https://www.gynecologist.shop";
+const BLOG_URL = "https://www.marketing2advertising.com";
 
 /* --- Fetch Blogger Posts by Search Query --- */
 function searchPosts(query) {
@@ -1312,14 +1347,14 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 
   <footer class="footer">
     <div style="text-align: center;">
-      <a href="https://www.gynecologist.shop/contact-us.html" target="_blank">Contact Us</a> |
-      <a href="https://www.gynecologist.shop/movies.html" target="_blank">Movies</a> |
-      <a href="https://www.gynecologist.shop/privacy-policy" target="_blank">Privacy Policy</a> |
-      <a href="https://www.gynecologist.shop/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
-      <a href="https://www.gynecologist.shop/disclosure.html" target="_blank">Disclosure</a>
+      <a href="https://www.marketing2advertising.com/contact-us.html" target="_blank">Contact Us</a> |
+      <a href="https://www.marketing2advertising.com/movies.html" target="_blank">Movies</a> |
+      <a href="https://www.marketing2advertising.com/privacy-policy" target="_blank">Privacy Policy</a> |
+      <a href="https://www.marketing2advertising.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
+      <a href="https://www.marketing2advertising.com/disclosure.html" target="_blank">Disclosure</a>
     </div>
     <p style="color: #aaaaaa; margin-top: 10px; text-align: center;">
-      © 2025 Gynecologist. All Rights Reserved.
+      © 2025 Marketing2advertising. All Rights Reserved.
     </p>
   </footer>
 
