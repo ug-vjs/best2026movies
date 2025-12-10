@@ -5,139 +5,48 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> THE BEST UPCOMING MOVIES 2026 (Trailers) Free Full Movies</title>
+  <title> Movies mu luganda 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch Movies for free</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content=" THE BEST UPCOMING MOVIES 2026 & 2027 (Trailers), Indian &amp; Turkish Films. ✓ Free Cartoons &amp; Animations. ✓ Translated · SUPER ACTION">
+  <meta name="description" content=" Movies 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch New Movies by VJ Junior, VJ Jingo, VJ Kevo, Ice P Ulio, Bukoleya, Indian &amp; Turkish Films. ✓ Free Cartoons &amp; Animations. ✓ Translated · SUPER ACTION">
 
-<!-- 🎬 Video Player Container -->
+
+    <!-- 🎬 Video Player Container with Ad Overlay Inside the Player -->
 <div id="video-container" style="position:relative; width:100%; height:500px; margin:20px 0;">
 
+    <!-- Video Player (No full-screen functionality) -->
     <div class="video-wrapper" style="position:relative; width:100%; height:100%;">
+        <video id="videoPlayer" style="width:100%; height:100%" controls>
+            <source src="https://t.co/ckXL1fbCsm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-        <!-- YouTube Player -->
-        <iframe id="videoPlayer"
-            style="width:100%; height:100%;"
-            src="https://www.youtube.com/embed/5lFTclUWljM?enablejsapi=1
-                &autoplay=0
-                &controls=1
-                &modestbranding=1
-                &rel=0
-                &fs=0
-                &color=white
-                &iv_load_policy=3
-                &playsinline=1"
-            frameborder="0"
-            allow="autoplay; encrypted-media">
-        </iframe>
-
-        <!-- BLACK FRAME (TOP/BOTTOM LARGE, SIDES SMALL) -->
-        <div class="hide-top"></div>
-        <div class="hide-left"></div>
-        <div class="hide-right"></div>
-        <div class="hide-bottom-right"></div> <!-- Full-width black bar -->
-
-        <!-- 🎬 Ad Overlay ABOVE black bars -->
-        <div id="ad-overlay"
-            style="display:none; position:absolute; top:0; left:0; width:100%; height:100%;
-                   background:rgba(0,0,0,0.75); z-index:40; justify-content:center;
-                   align-items:center; flex-direction:column;">
-
-            <!-- Skip / Close Button always clickable -->
-            <div style="position:absolute; top:10px; right:20px; z-index:50; text-align:right; pointer-events:auto;">
-                <div id="countdown"
-                    style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;">
-                    Skip in: 7
-                </div>
-                <button id="close-ad"
-                    style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px;
-                           cursor:pointer; border-radius:4px; font-weight:bold;">
-                    Skip
-                </button>
-            </div>
-
-            <div id="ad-wrapper"
-                style="display:flex; justify-content:center; align-items:center;
-                       width:100%; height:100%; text-align:center; pointer-events:auto;">
-            </div>
+    <!-- 🎬 Ad Overlay (Inside Video Container) -->
+    <div id="ad-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.75); z-index:10; justify-content:center; align-items:center; flex-direction:column;">
+        <!-- Countdown and Skip Button -->
+        <div style="position:absolute; top:20px; right:20px; text-align:right; z-index: 20;">
+            <div id="countdown" style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;">Skip in: 7</div>
+            <button id="close-ad" style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px; cursor:pointer; border-radius:4px; font-weight:bold;">Skip</button>
         </div>
 
+        <!-- Google AdSense Ad Container -->
+        <div id="ad-wrapper" style="display:flex; justify-content:center; align-items:center; width:100%; height:100%; text-align:center;">
+            <!-- AdSense ad will be inserted here dynamically -->
+        </div>
     </div>
+
 </div>
 
-<!-- BLACK FRAME CSS with responsive -->
-<style>
-/* TOP black mask */
-.hide-top {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:60px; /* desktop */
-    background:#000000;
-    z-index:20;
-    pointer-events:none;
-}
-
-/* LEFT thin black border */
-.hide-left {
-    position:absolute;
-    top:0;
-    left:0;
-    width:8px;
-    height:100%;
-    background:#000000;
-    z-index:20;
-    pointer-events:none;
-}
-
-/* RIGHT thin black border */
-.hide-right {
-    position:absolute;
-    top:0;
-    right:0;
-    width:8px;
-    height:100%;
-    background:#000000;
-    z-index:20;
-    pointer-events:none;
-}
-
-/* BOTTOM RIGHT black bar - full width on desktop */
-.hide-bottom-right {
-    position:absolute;
-    bottom:0;
-    left:0; /* Full-width from left to right */
-    width:100%; /* Full width */
-    height:40px; /* reduced height */
-    background:#000000;
-    z-index:20;
-    pointer-events:none;
-}
-
-/* RESPONSIVE adjustments */
-@media screen and (max-width: 768px) {
-    .hide-top { height:80px; } /* taller top on tablet */
-    .hide-bottom-right { width:100%; height:55px; } /* adjusted to 55px on tablet */
-    .hide-left, .hide-right { width:5px; }
-}
-
-@media screen and (max-width: 480px) {
-    .hide-top { height:95px; } /* taller top on mobile */
-    .hide-bottom-right { width:100%; height:55px; } /* adjusted to 55px on mobile */
-    .hide-left, .hide-right { width:3px; }
-}
-</style>
-
-<!-- AdSense script -->
-<script async crossorigin="anonymous"
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743">
-</script>
+<!-- 🎬 Google AdSense script -->
+<script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743'></script>
 
 <script>
-let skipClicked = false;
-let iframe = document.getElementById("videoPlayer");
+// Variables to control ad behavior
+let skipClicked = false; // Flag to track if the "Skip" button was clicked
+let videoPlayer = document.getElementById("videoPlayer"); // Video element reference
 
+// Ad configuration for Google AdSense (5 rotating ads)
 const ads = [
     { client:"ca-pub-2269884583846743", slot:"2359999321", width:300, height:250 },
     { client:"ca-pub-2269884583846743", slot:"4256856469", width:250, height:250 },
@@ -146,8 +55,9 @@ const ads = [
     { client:"ca-pub-2269884583846743", slot:"5610977415", width:336, height:280 }
 ];
 
-let currentAdIndex = 0;
+let currentAdIndex = 0; // Keeps track of which ad to show next
 
+// Function to show ad overlay with video and countdown
 function showAdOverlay(customSeconds = 8) {
     const overlay = document.getElementById("ad-overlay");
     const countdownEl = document.getElementById("countdown");
@@ -155,9 +65,10 @@ function showAdOverlay(customSeconds = 8) {
     const adWrapper = document.getElementById("ad-wrapper");
 
     overlay.style.display = "flex";
-    closeBtn.style.display = "none";
-    adWrapper.innerHTML = "";
+    closeBtn.style.display = "none"; // Initially hide the button
+    adWrapper.innerHTML = ""; // Clear previous ad content
 
+    // Load ad
     const ad = ads[currentAdIndex];
     const ins = document.createElement("ins");
     ins.className = "adsbygoogle";
@@ -168,65 +79,97 @@ function showAdOverlay(customSeconds = 8) {
     ins.setAttribute("data-ad-slot", ad.slot);
 
     adWrapper.appendChild(ins);
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({}); // Request AdSense ad to load
 
+    // Prepare next ad rotation
     currentAdIndex = (currentAdIndex + 1) % ads.length;
 
+    // Countdown logic
     let timeLeft = customSeconds;
     countdownEl.textContent = "Skip in: " + timeLeft;
 
-    const timer = setInterval(() => {
+    const timer = setInterval(function() {
         timeLeft--;
         countdownEl.textContent = "Skip in: " + timeLeft;
 
         if (timeLeft === 0) {
-            closeBtn.style.display = "inline-block";
-            closeBtn.textContent = "X";
+            closeBtn.style.display = "inline-block"; // Show the skip button after countdown ends
+            closeBtn.textContent = "X"; // Change button to "X"
             clearInterval(timer);
         }
-    }, 1000);
+    }, 1000); // 1-second interval for countdown
 
+    // Handle close button behavior
     closeBtn.onclick = function() {
-        overlay.style.display = "none";
-        iframe.contentWindow.postMessage(
-            '{"event":"command","func":"playVideo","args":""}', '*'
-        );
+        overlay.style.display = "none"; // Close the ad overlay
+        videoPlayer.play(); // Play the video after ad is skipped
     };
 }
 
+// Special rule: First opening = 2 ads with delay (after 2 minutes)
 function runInitialTwoAds() {
     setTimeout(() => {
-        showAdOverlay(7);
+        // Ad 1 = 7 seconds
+        showAdOverlay(7); // Ad 1 displays for 7 seconds
 
+        // After 7 seconds, show the Skip button
         setTimeout(() => {
             const closeBtn = document.getElementById("close-ad");
-            closeBtn.style.display = "inline-block";
-            closeBtn.textContent = "Skip";
-        }, 7000);
+            closeBtn.style.display = "inline-block"; // Show "Skip" button
+            closeBtn.textContent = "Skip"; // Set button text to "Skip"
+        }, 7000); // Show Skip button after 7 seconds
 
+        // Check if "Skip" button is clicked before transitioning to Ad 2
         const closeBtn = document.getElementById("close-ad");
         closeBtn.onclick = function() {
-            skipClicked = true;
-            showAdOverlay(8);
-            closeBtn.style.display = "none";
+            skipClicked = true; // Mark that "Skip" was clicked
+            showAdOverlay(8); // Show Ad 2 immediately (for 8 seconds)
+            closeBtn.style.display = "none"; // Hide the skip button
         };
 
+        // If "Skip" button isn't clicked, Ad 2 will show after 13 more seconds (20 seconds total)
         setTimeout(() => {
-            if (!skipClicked) showAdOverlay(8);
-        }, 20000);
-
-    }, 120000);
+            if (!skipClicked) {
+                showAdOverlay(8); // Ad 2 shows for 8 seconds after the delay
+            }
+        }, 20000); // Trigger after 20 seconds (7 seconds for Ad 1 + 13 seconds wait)
+    }, 120000); // Wait 2 minutes (120 seconds) before showing the first ad
 }
 
-runInitialTwoAds();
+// Start the ad sequence
+runInitialTwoAds(); // Display first two ads after 2 minutes (7s + 13s wait = 20s)
 
+// Start full schedule AFTER the second ad finishes
 setTimeout(() => {
+    // Further ad schedule starts here (after initial ads)
+    
+    // 1) 5 minutes (300 seconds)
     setTimeout(showAdOverlay, 300000);
+
+    // 2) 10 minutes (600 seconds)
     setTimeout(showAdOverlay, 600000);
+
+    // 3) 20 minutes (1200 seconds)
     setTimeout(showAdOverlay, 1200000);
+
+    // 4) 30 minutes (1800 seconds)
     setTimeout(showAdOverlay, 1800000);
+
+    // 5) Every 35 minutes (2100 seconds)
     setInterval(showAdOverlay, 2100000);
-}, 20000);
+
+}, 20000); // Wait for the first 20 seconds (7 + 13) to complete, then start the schedule
+
+// Prevent Full-Screen Mode
+videoPlayer.removeAttribute("controlsList"); // Remove full-screen control from the player
+
+// Prevent the user from entering full-screen programmatically
+videoPlayer.addEventListener('fullscreenchange', function() {
+    if (document.fullscreenElement) {
+        document.exitFullscreen(); // Automatically exit fullscreen if attempted
+    }
+});
+
 </script>
     </div>
   </main>
@@ -314,7 +257,7 @@ setTimeout(() => {
 
 
 <!-- Blogger JSON Feed for label "mobland", showing 10 posts -->
-<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
+<script src="https://www.gynecologist.shop/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
 
 <style>
   .movie-slider-wrapper {
@@ -533,7 +476,7 @@ async function searchPosts(e, auto = false) {
   resultsDiv.innerHTML = "<p>Loading...</p>";
 
   try {
-    const res = await fetch(`https://marketing2advertising.com/wp-json/wp/v2/posts?_embed&search=${encodeURIComponent(query)}`);
+    const res = await fetch(`https://gynecologist.shop/wp-json/wp/v2/posts?_embed&search=${encodeURIComponent(query)}`);
     const posts = await res.json();
 
     if (posts.length === 0) {
@@ -576,176 +519,198 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<!-- Google AdSense -->
-<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
+  <!-- ✅ SIDE FLOATING AD -->
+<div id="side-float-ad">
+  <div id="side-toggle">Ad (10)</div>
+  <div id="side-content">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
+     crossorigin="anonymous"></script>
 
-<!-- ✔ ROTATING BOTTOM ANCHOR AD (working version with updates) -->
-<div id="rotating-bottom-anchor"
-     style="
-        display:none;
-        position:fixed;
-        bottom:0;
-        left:50%;
-        transform:translateX(-50%);
-        z-index:999999;
-        width:100%;
-        max-width:768px;
-        background:#fff;
-        box-shadow:0 -2px 6px rgba(0,0,0,0.3);
-        border-top:1px solid #ddd;
-        text-align:center;
-        padding-top:3px;
-">
-    <div style="font-size:14px; background:#f1f1f1; padding:4px; border-bottom:1px solid #ddd;">
-        <span id="rb-countdown" style="font-weight:bold; color:#C2185B;"></span>
-        <button id="rb-close" style="
-            display:none;
-            margin-left:8px;
-            background:#fff;
-            border:1px solid #aaa;
-            padding:2px 7px;
-            font-size:14px;
-            font-weight:bold;
-            cursor:pointer;
-            border-radius:4px;
-        ">Skip</button>
-    </div>
-
-    <div id="rb-ad-wrapper" style="padding:6px;"></div>
+  </div>
 </div>
 
+<!-- ✅ BOTTOM ANCHOR AD -->
+<div id="anchor-ad-bottom">
+  <div id="anchor-toggle-bottom">Ad (10)</div>
+  <div id="anchor-content-bottom">
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
+     crossorigin="anonymous"></script>
+<!-- 728 by 90 new -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2269884583846743"
+     data-ad-slot="3580304316"></ins>
 <script>
-/* ------------------------------
-   Rotating ads list (UPDATED)
------------------------------- */
-const rbAds = [
-    { client:"ca-pub-2269884583846743", slot:"6583429762", width:250, height:90 },
-    { client:"ca-pub-2269884583846743", slot:"3580304316", width:728, height:90 },
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
 
-    // 🚫 Rotation #3: NO AD
-    { type:"none" },
-
-    { client:"ca-pub-2269884583846743", slot:"9681867446", width:300, height:100 },
-    { client:"ca-pub-2269884583846743", slot:"5742141919", width:768, height:90 }
-];
-
-let rbIndex = 0;
-let rbSkipClicked = false;
-
-/* ------------------------------
-   Show Bottom Ad
------------------------------- */
-function showBottomRotatingAd(seconds = 8) {
-    const box = document.getElementById("rotating-bottom-anchor");
-    const wrapper = document.getElementById("rb-ad-wrapper");
-    const btn = document.getElementById("rb-close");
-    const cd = document.getElementById("rb-countdown");
-
-    box.style.display = "block";
-    wrapper.innerHTML = "";
-    btn.style.display = "none";
-
-    const ad = rbAds[rbIndex];
-    rbIndex = (rbIndex + 1) % rbAds.length;
-
-    /* 🚫 NO-AD rotation */
-    if (ad.type === "none") {
-        wrapper.innerHTML = "";
-        cd.textContent = "";
-        btn.style.display = "none";
-        box.style.height = "28px"; // minimized bar
-        return;
-    }
-
-    /* ✔ Normal ad rotation */
-    box.style.height = "auto";
-
-    const ins = document.createElement("ins");
-    ins.className = "adsbygoogle";
-    ins.style.display = "inline-block";
-    ins.style.width = ad.width + "px";
-    ins.style.height = ad.height + "px";
-    ins.setAttribute("data-ad-client", ad.client);
-    ins.setAttribute("data-ad-slot", ad.slot);
-
-    wrapper.appendChild(ins);
-    (adsbygoogle = window.adsbygoogle || []).push({});
-
-    // Countdown
-    let t = seconds;
-    cd.textContent = "Close available in: " + t;
-
-    const timer = setInterval(() => {
-        t--;
-        cd.textContent = "Close available in: " + t;
-        if (t === 0) {
-            btn.style.display = "inline-block";
-            btn.textContent = "X";
-            clearInterval(timer);
-        }
-    }, 1000);
-
-    // Close action
-    btn.onclick = () => box.style.display = "none";
-}
-
-/* ------------------------------
-   First Opening = 2 Ads
------------------------------- */
-function firstTwoAds() {
-    // Ad 1 – 7 seconds
-    showBottomRotatingAd(7);
-
-    // Show skip after 7s
-    setTimeout(() => {
-        const btn = document.getElementById("rb-close");
-        btn.style.display = "inline-block";
-        btn.textContent = "Skip";
-    }, 7000);
-
-    // Skip logic
-    const btn = document.getElementById("rb-close");
-    btn.onclick = () => {
-        rbSkipClicked = true;
-        showBottomRotatingAd(8);
-        btn.style.display = "none";
-    };
-
-    // If not skipped → show Ad 2 after 20 seconds total
-    setTimeout(() => {
-        if (!rbSkipClicked) {
-            showBottomRotatingAd(8);
-        }
-    }, 20000);
-}
-
-firstTwoAds();
-
-/* ------------------------------
-   Schedule after 20s
------------------------------- */
-setTimeout(() => {
-    setTimeout(showBottomRotatingAd, 40000);
-    setTimeout(showBottomRotatingAd, 90000);
-    setTimeout(showBottomRotatingAd, 150000);
-    setTimeout(showBottomRotatingAd, 270000);
-    setInterval(showBottomRotatingAd, 570000);
-}, 20000);
-</script>
+</div>
+</div>
 
 <style>
-/* Keep page above ad */
-body { padding-bottom: 120px; }
+/* -------- SIDE FLOATING AD -------- */
+#side-float-ad {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#side-toggle {
+  background: #f1f1f1;
+  font-size: 13px;
+  color: #333;
+  cursor: not-allowed;
+  padding: 5px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+}
+#side-toggle.enabled {
+  cursor: pointer;
+  user-select: auto;
+  background: #e9e9e9;
+}
+#side-content {
+  transition: all 0.3s ease;
+  display: block;
+  padding: 4px;
+}
+/* Collapsed (slides partially off-screen) */
+#side-float-ad.collapsed {
+  right: -180px;
+  opacity: 0.8;
+}
 
-/* Responsive */
-@media(max-width:600px) {
-    #rotating-bottom-anchor ins {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 768px;
-    }
+/* -------- BOTTOM ANCHOR AD -------- */
+#anchor-ad-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9998;
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  border-top: 1px solid #ddd;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+#anchor-toggle-bottom {
+  background: #f1f1f1;
+  font-size: 13px;
+  color: #333;
+  cursor: not-allowed;
+  padding: 4px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+}
+#anchor-toggle-bottom.enabled {
+  cursor: pointer;
+  user-select: auto;
+}
+#anchor-content-bottom {
+  transition: all 0.3s ease;
+}
+
+/* Page spacing so content isn’t hidden */
+body {
+  padding-bottom: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #side-float-ad {
+    right: 5px;
+    width: 180px;
+    bottom: 50px;
+  }
+  #side-float-ad.collapsed {
+    right: -150px;
+  }
+  #anchor-content-bottom ins {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 768px;
+  }
 }
 </style>
+
+<script>
+/* -------- SIDE AD SCRIPT -------- */
+const sideToggle = document.getElementById("side-toggle");
+const sideContent = document.getElementById("side-content");
+const sideAd = document.getElementById("side-float-ad");
+
+let hiddenSide = false;
+let sideCountdown = 10;
+
+const sideInterval = setInterval(() => {
+  sideCountdown--;
+  sideToggle.textContent = `Ad (${sideCountdown})`;
+  if (sideCountdown <= 0) {
+    clearInterval(sideInterval);
+    sideToggle.textContent = "🔼 Ad"; // up arrow emoji
+    sideToggle.classList.add("enabled");
+    sideToggle.addEventListener("click", toggleSideAd);
+  }
+}, 1000);
+
+function toggleSideAd() {
+  if (!hiddenSide) {
+    sideContent.style.display = "none";
+    sideToggle.innerHTML = "🔽 Ad"; // down arrow emoji
+    sideAd.classList.add("collapsed");
+    hiddenSide = true;
+  } else {
+    sideContent.style.display = "block";
+    sideToggle.innerHTML = "🔼 Ad";
+    sideAd.classList.remove("collapsed");
+    hiddenSide = false;
+  }
+}
+
+/* -------- BOTTOM AD SCRIPT -------- */
+const toggleBottom = document.getElementById("anchor-toggle-bottom");
+const contentBottom = document.getElementById("anchor-content-bottom");
+
+let hiddenBottom = false;
+let bottomCountdown = 10;
+
+const bottomInterval = setInterval(() => {
+  bottomCountdown--;
+  toggleBottom.textContent = `Ad (${bottomCountdown})`;
+  if (bottomCountdown <= 0) {
+    clearInterval(bottomInterval);
+    toggleBottom.textContent = "🔼 Ad"; // up arrow emoji
+    toggleBottom.classList.add("enabled");
+    toggleBottom.addEventListener("click", toggleBottomAd);
+  }
+}, 1000);
+
+function toggleBottomAd() {
+  if (!hiddenBottom) {
+    contentBottom.style.display = "none";
+    toggleBottom.innerHTML = "🔽 Ad"; // down arrow emoji
+    hiddenBottom = true;
+  } else {
+    contentBottom.style.display = "block";
+    toggleBottom.innerHTML = "🔼 Ad";
+    hiddenBottom = false;
+  }
+}
+</script>
 
 
 <!-- Movie Auto-Slider Grid -->
@@ -911,7 +876,7 @@ body { padding-bottom: 120px; }
 
 <script>
 // === BLOGGER SITE URL ===
-const BLOG_URL = "https://www.marketing2advertising.com/";
+const BLOG_URL = "https://www.gynecologist.shop/";
 
 /* --- Fetch Blogger Posts by Search Query --- */
 function searchPosts(query) {
@@ -1034,7 +999,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 </script>
 
 <!-- Blogger JSON Feed (label: movies1000) -->
-<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
+<script src="https://www.gynecologist.shop/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
 
 <style>
   .movie-grid-wrapper {
@@ -1255,7 +1220,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 
 <script>
 // === BLOGGER SITE URL ===
-const BLOG_URL = "https://www.marketing2advertising.com";
+const BLOG_URL = "https://www.gynecologist.shop";
 
 /* --- Fetch Blogger Posts by Search Query --- */
 function searchPosts(query) {
@@ -1325,14 +1290,14 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 
   <footer class="footer">
     <div style="text-align: center;">
-      <a href="https://www.marketing2advertising.com/contact-us.html" target="_blank">Contact Us</a> |
-      <a href="https://www.marketing2advertising.com/movies.html" target="_blank">Movies</a> |
-      <a href="https://www.marketing2advertising.com/privacy-policy" target="_blank">Privacy Policy</a> |
-      <a href="https://www.marketing2advertising.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
-      <a href="https://www.marketing2advertising.com/disclosure.html" target="_blank">Disclosure</a>
+      <a href="https://www.gynecologist.shop/contact-us.html" target="_blank">Contact Us</a> |
+      <a href="https://www.gynecologist.shop/movies.html" target="_blank">Movies</a> |
+      <a href="https://www.gynecologist.shop/privacy-policy" target="_blank">Privacy Policy</a> |
+      <a href="https://www.gynecologist.shop/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
+      <a href="https://www.gynecologist.shop/disclosure.html" target="_blank">Disclosure</a>
     </div>
     <p style="color: #aaaaaa; margin-top: 10px; text-align: center;">
-      © 2025 Marketing2advertising. All Rights Reserved.
+      © 2025 Gynecologist. All Rights Reserved.
     </p>
   </footer>
 
