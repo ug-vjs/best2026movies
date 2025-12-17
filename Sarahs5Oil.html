@@ -1110,7 +1110,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 <!-- Google AdSense Script -->
 <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
 
-  <style>
+ <style>
 #devtools-warning {
   position: fixed;
   top: 0;
@@ -1143,7 +1143,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
     <h1>▲ SECURITY WARNING</h1>
     <p>
       Inspect Element is not allowed on this page.<br/>
-      Please close Developer Tools to continue.
+      Close Developer Tools to continue.
     </p>
   </div>
 </div>
@@ -1151,7 +1151,7 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 <script>
 (function () {
   var devtoolsOpen = false;
-  var redirected = false;
+  var redirectTimer = null;
   var threshold = 160;
   var redirectDelay = 2000;
 
@@ -1177,34 +1177,23 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
         devtoolsOpen = true;
         blockPage();
 
-        if (!redirected) {
-          redirected = true;
-          setTimeout(function () {
-            window.location.href = "/";
-          }, redirectDelay);
-        }
+        redirectTimer = setTimeout(function () {
+          window.location.href = "/";
+        }, redirectDelay);
       }
     } else {
       if (devtoolsOpen) {
         devtoolsOpen = false;
         unblockPage();
+        clearTimeout(redirectTimer);
       }
     }
   }, 500);
 
-  /* Block right click */
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
   });
 
-  /* Block left click selection & dragging */
-  document.addEventListener("mousedown", function (e) {
-    if (e.button === 0) {
-      e.preventDefault();
-    }
-  });
-
-  /* Block inspect & view source shortcuts */
   document.addEventListener("keydown", function (e) {
     if (
       e.key === "F12" ||
@@ -1213,18 +1202,13 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
       (e.ctrlKey &amp;&amp; e.key === "S")
     ) {
       e.preventDefault();
-      if (!redirected) {
-        redirected = true;
-        window.location.href = "/";
-      }
+      window.location.href = "/";
     }
   });
 
-  /* Block text selection */
   document.addEventListener("selectstart", function (e) {
     e.preventDefault();
   });
-
 })();
 </script>
 
